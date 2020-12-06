@@ -52,15 +52,14 @@ class Simulator(object):
         avg_lambda = self.amount_vaccinated / self.last_treatment_time
 
         output = ""
+        output += str(self.amount_vaccinated) + ' ' + str(self.amount_gave_up) + ' ' + str(self.last_treatment_time) + ' '
         for i in range(len(A_Ti)):
             output += str(A_Ti[i]) + ' '
 
         for i in range(len(Z_i)):
-            if i != len(Z_i)-1:
-                output += str(Z_i[i]) + ' '
-            else:
-                output += str(Z_i[i])
-        print(self.amount_vaccinated, self.amount_gave_up, self.last_treatment_time, output, Tw, Ts, avg_lambda)
+            output += str(Z_i[i]) + ' '
+        output += str(Tw) + ' ' + str(Ts) + ' ' + str(avg_lambda)
+        print(output)
 
 
 
