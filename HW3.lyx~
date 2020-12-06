@@ -1,0 +1,1123 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "David"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\topmargin 3cm
+\bottommargin 4cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל בית
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מבוא לרשתות מחשבים
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+236334
+\end_layout
+
+\begin_layout Author
+בני נזימוב
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+314862129
+\numeric off
+ 
+\begin_inset Newline newline
+\end_inset
+
+רעות גולדברג
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+316254192
+\end_layout
+
+\begin_layout Description
+
+\series bold
+עבור הקלט: 
+\begin_inset Formula $M=3,\,\lambda=30,\,\mu=40,\,P_{0}=1,\,P_{1}=0.9,\,P_{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+1
+\numeric off
+.
+ 
+\end_layout
+
+\begin_layout Standard
+נחשב כמה גדלים למען דיאגרמת המצבים: 
+\begin_inset Formula 
+\begin{align*}
+\frac{\lambda}{M} & =\frac{30}{3}=10\\
+\lambda\cdot P_{1} & =30\cdot0.9=27
+\end{align*}
+
+\end_inset
+
+הדיאגרמה:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename 1st_diagram.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+כפי שנלמד בתרגולים ובהרצאות, כל מערכת עם מספר 
+\series bold
+סופי 
+\series default
+של משתמשים היא יציבה, ולכן המערכת הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל יציבה.
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נסמן ב-
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ את ההסתברויות למצבים המתאימים לפי הדיאגרמה.
+ נחשב את הסתברויות המצבים כפי שנלמד בתרגול: 
+\begin_inset Formula 
+\begin{align*}
+27S_{1} & =40S_{4}\\
+27S_{2} & =40S_{5}\\
+27S_{3} & =40S_{6}\\
+10S_{0} & =40S_{1}\\
+10S_{0} & =40S_{2}\\
+10S_{0} & =40S_{3}\\
+\sum_{i=0}^{6}S_{i} & =1
+\end{align*}
+
+\end_inset
+
+נקבל את המערכת 
+\begin_inset Formula $A\underline{x}=\underline{b}$
+\end_inset
+
+ הבאה כאשר 
+\begin_inset Formula $A$
+\end_inset
+
+ היא מטריצת המקדמים ו-
+\begin_inset Formula $\underline{x}$
+\end_inset
+
+ הוא וקטור הנעלמים ו-
+\begin_inset Formula $\underline{b}$
+\end_inset
+
+ הוא וקטור הפתרון: 
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccccccc}
+0 & 27 & 0 & 0 & -40 & 0 & 0\\
+0 & 0 & 27 & 0 & 0 & -40 & 0\\
+0 & 0 & 0 & 27 & 0 & 0 & -40\\
+10 & -40 & 0 & 0 & 0 & 0 & 0\\
+10 & 0 & -40 & 0 & 0 & 0 & 0\\
+10 & 0 & 0 & -40 & 0 & 0 & 0\\
+1 & 1 & 1 & 1 & 1 & 1 & 1
+\end{array}\right)\cdot\left(\begin{array}{c}
+S_{0}\\
+S_{1}\\
+S_{2}\\
+S_{3}\\
+S_{4}\\
+S_{5}\\
+S_{6}
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+0\\
+0\\
+1
+\end{array}\right)
+\]
+
+\end_inset
+
+נפתור ונקבל: 
+\begin_inset Formula 
+\begin{align*}
+S_{0} & =\frac{160}{361}\approx0.4432\\
+S_{1} & =\frac{40}{361}\approx0.1108\\
+S_{2} & =\frac{40}{361}\approx0.1108\\
+S_{3} & =\frac{40}{361}\approx0.1108\\
+S_{4} & =\frac{27}{361}\approx0.0748\\
+S_{5} & =\frac{27}{361}\approx0.0748\\
+S_{6} & =\frac{27}{361}\approx0.0748
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+4
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב כי מאילוצי התרגיל, יכול להיות רק תור לחיסון אחד בכל רגע נתון.
+ שכן ברגע שאין מתחסנים כלל במערכת ואז מגיע הראשון ובוחר חיסון באקראי, כל
+ עוד התור לחיסון זה לא ריק )יש מישהו שמתחסן כרגע( אז כל המתחסנים החדשים
+ שיגיעו לבית החולים יכנסו אך ורק לתור זה.
+ לכן, נוכל לתאר מצב של המערכת על ידי מספר המתחסנים שיש כרגע 
+\series bold
+בתור כלשהו.
+
+\series default
+ לשם כך נצמצמם את המצבים באופן הבא: 
+\begin_inset Formula 
+\begin{align*}
+0 & =(0,0,0)\\
+1 & =(1,0,0)\cup(0,1,0)\cup(0,0,1)\\
+2 & =(2,0,0)\cup(0,2,0)\cup(0,0,2)\\
+S_{0}' & =S_{0}=\frac{160}{361}\approx0.4432\\
+S_{1}' & =S_{1}+S_{2}+S_{3}=\frac{120}{361}\approx0.3324\\
+S_{2}' & =S_{4}+S_{5}+S_{6}=\frac{81}{361}\approx0.2243
+\end{align*}
+
+\end_inset
+
+הדיאגרמה: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename 2nd_diagram.png
+	lyxscale 80
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+5
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+על מנת לחשב את 
+\begin_inset Formula $\overline{\lambda}$
+\end_inset
+
+ נשתמש בקצבי ההגעה בדיאגרמת המצבים המצומצמת: 
+\begin_inset Formula 
+\[
+\overline{\lambda}=E(\lambda)=\sum_{i=0}^{2}S_{i}'\cdot\lambda_{i}=30\cdot\frac{160}{361}+27\cdot\frac{120}{360}+0=\frac{8040}{361}\approx22.27
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+6
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נחשב את 
+\begin_inset Formula $\overline{N}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\overline{N}=E(N)=\sum_{i=0}^{2}S_{i}'\cdot i=0+1\cdot\frac{120}{360}+2\cdot\frac{81}{360}=\frac{282}{361}\approx0.78
+\]
+
+\end_inset
+
+לפי משפט ליטל מתקיים: 
+\begin_inset Formula $\overline{N}=\overline{\lambda}\cdot\overline{T}$
+\end_inset
+
+.
+ לכן נקבל: 
+\begin_inset Formula 
+\[
+\overline{T}=\frac{\overline{N}}{\overline{\lambda}}=\frac{47}{1340}\approx0.035
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+7
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+על מנת לקבל את תוחלת זמן ההמתנה נחסיר מתוחלת זמן השהייה 
+\begin_inset Formula $\overline{T}$
+\end_inset
+
+ את תוחלת זמן השירות 
+\begin_inset Formula $\frac{1}{\mu}$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\[
+T_{Q}=\overline{T}-\frac{1}{\mu}=\frac{47}{1340}-\frac{1}{40}=\frac{27}{2680}\approx0.01
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\numeric on
+8
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+להלן פלט הסימולטור עבור הרצה עם הקלט הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל עבור 
+\begin_inset Formula $T=100,000$
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename simulation1.png
+	lyxscale 80
+	scale 65
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כאשר הפרמטרים המסומנים באדום משמאל לימין הם: 
+\begin_inset Formula 
+\[
+Z_{0},Z_{1},Z_{2},\overline{T_{W}},\overline{T_{S}},\overline{\lambda_{A}}
+\]
+
+\end_inset
+
+נשווה ביניהם לבין החישובים התיאורטיים:
+\begin_inset Formula 
+\begin{align*}
+Z_{0} & =0.44352\approx0.4432=S_{0}\\
+Z_{1} & =0.11091\approx0.1108=S_{1},S_{2},S_{3}\\
+Z_{2} & =0.07483\approx0.0748=S_{4},S_{5},S_{6}\\
+\overline{T_{W}} & =0.01007\approx0.01=T_{Q}\\
+\overline{T_{S}} & =0.025004\approx0.025=\frac{1}{\mu}\\
+\overline{\lambda_{A}} & =22.28\approx22.27=\overline{\lambda}
+\end{align*}
+
+\end_inset
+
+ניתן לראות שהחישובים התיאורטיים מסכימים עם הסימולטור עד כדי שגיאה זניחה
+ כתוצאה מרעש אקראי.
+\begin_inset Newline newline
+\end_inset
+
+נציין כי במימוש הסימולטור שלנו סימלצנו את המערכת 
+\series bold
+המצומצמת
+\series default
+ המתוארת בסעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למען פשטות המימוש, וכדי לקבל את ההסתברויות המתאימות למערכת המקורית חישבנו
+ את 
+\begin_inset Formula $A_{Ti}$
+\end_inset
+
+ באופן הבא:
+\begin_inset Newline newline
+\end_inset
+
+לכל 
+\begin_inset Formula $i>0$
+\end_inset
+
+, סכמנו את כל הזמנים בהם היה קיים תור עם בדיוק 
+\begin_inset Formula $i$
+\end_inset
+
+ אנשים וחילקנו סכום זה ב-
+\begin_inset Formula $M$
+\end_inset
+
+.
+ חישוב זה נכון מכיוון שהתורים נבחרים באופן אחיד, ולכן אין אף תור שיש לו
+ 
+\begin_inset Quotes eld
+\end_inset
+
+עדיפות
+\begin_inset Quotes erd
+\end_inset
+
+ על תור אחר.
+ עקב כך, 
+\begin_inset Formula $A_{Ti}$
+\end_inset
+
+ שמוגדר להיות הממוצע על פני כל התורים עבור כמות הזמן שגודל שבתור מסוים היו
+ 
+\begin_inset Formula $i>0$
+\end_inset
+
+ אנשים, שווה לסך כל הזמן בו היה קיים תור 
+\series bold
+כשלהו
+\series default
+ במערכת בגודל 
+\begin_inset Formula $i$
+\end_inset
+
+, חלקי מספר התורים, 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+פורמלית, כאשר 
+\begin_inset Formula $T_{i}^{m}$
+\end_inset
+
+ מסמל את סך הזמן בו היו בתור ה-
+\begin_inset Formula $m$
+\end_inset
+
+ בדיוק 
+\begin_inset Formula $i$
+\end_inset
+
+ אנשים: 
+\begin_inset Formula 
+\[
+A_{Ti}=\frac{1}{M}\cdot\sum_{m=1}^{M}T_{i}^{m}=\frac{Total\_Time\_Exists\_Queue\_Size\_i}{M}
+\]
+
+\end_inset
+
+בנוסף 
+\begin_inset Formula $Z_{i}$
+\end_inset
+
+ תלויים ב-
+\begin_inset Formula $A_{Ti}$
+\end_inset
+
+, וכל שאר הפרמטרים לא מושפעים מאופן החישוב הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל, ולכן בתוצאות הסימולציה שלנו קיבלנו בעצם תוצאות המשקפות את המערכת המקורית.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series bold
+עבור הקלט: 
+\begin_inset Formula $\,M=2,\,\lambda=50,\,\mu=10,\,P_{0}=1,\,P_{1}=0.8,\,P_{2}=0.7,\,P_{3}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+1
+\numeric off
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{\lambda}{M} & =\frac{50}{2}=25\\
+\lambda\cdot P_{1} & =50\cdot0.8=40\\
+\lambda\cdot P_{2} & =50\cdot0.7=35
+\end{align*}
+
+\end_inset
+
+הדיאגרמה:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename 3rd_diagram.png
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+כפי שנלמד בתרגולים ובהרצאות, כל מערכת עם מספר 
+\series bold
+סופי 
+\series default
+של משתמשים היא יציבה, ולכן המערכת הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל יציבה.
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נסמן ב-
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ את ההסתברויות למצבים המתאימים לפי הדיאגרמה.
+ נחשב את הסתברויות המצבים כפי שנלמד בתרגול: 
+\begin_inset Formula 
+\begin{align*}
+25S_{0} & =10S_{1}\\
+25S_{0} & =10S_{2}\\
+40S_{1} & =10S_{3}\\
+40S_{2} & =10S_{4}\\
+35S_{3} & =10S_{5}\\
+35S_{4} & =10S_{6}\\
+\sum_{i=0}^{6}S_{i} & =1
+\end{align*}
+
+\end_inset
+
+נקבל את המערכת 
+\begin_inset Formula $A\underline{x}=\underline{b}$
+\end_inset
+
+ הבאה כאשר 
+\begin_inset Formula $A$
+\end_inset
+
+ היא מטריצת המקדמים ו-
+\begin_inset Formula $\underline{x}$
+\end_inset
+
+ הוא וקטור הנעלמים ו-
+\begin_inset Formula $\underline{b}$
+\end_inset
+
+ הוא וקטור הפתרון: 
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccccccc}
+25 & -10 & 0 & 0 & 0 & 0 & 0\\
+25 & 0 & -10 & 0 & 0 & 0 & 0\\
+0 & 40 & 0 & -10 & 0 & 0 & 0\\
+0 & 0 & 40 & 0 & -10 & 0 & 0\\
+0 & 0 & 0 & 35 & 0 & -10 & 0\\
+0 & 0 & 0 & 0 & 35 & 0 & -10\\
+1 & 1 & 1 & 1 & 1 & 1 & 1
+\end{array}\right)\cdot\left(\begin{array}{c}
+S_{0}\\
+S_{1}\\
+S_{2}\\
+S_{3}\\
+S_{4}\\
+S_{5}\\
+S_{6}
+\end{array}\right)=\left(\begin{array}{c}
+0\\
+0\\
+0\\
+0\\
+0\\
+0\\
+1
+\end{array}\right)
+\]
+
+\end_inset
+
+נפתור ונקבל: 
+\begin_inset Formula 
+\begin{align*}
+S_{0} & =\frac{2}{192}\approx0.0104\\
+S_{1} & =\frac{5}{192}\approx0.02604\\
+S_{2} & =\frac{5}{192}\approx0.02604\\
+S_{3} & =\frac{20}{192}\approx0.1042\\
+S_{4} & =\frac{20}{192}\approx0.1042\\
+S_{5} & =\frac{70}{192}\approx0.3646\\
+S_{6} & =\frac{70}{192}\approx0.3646
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+4
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+בנימוק דומה לקלט הקודם:
+\begin_inset Formula 
+\begin{align*}
+0 & =(0,0)\\
+1 & =(1,0)\cup(0,1)\\
+2 & =(2,0)\cup(0,2)\\
+3 & =(3,0)\cup(0,3)\\
+S_{0}' & =S_{0}=\frac{2}{192}\approx0.0104\\
+S_{1}' & =S_{1}+S_{2}=\frac{10}{192}\approx0.0521\\
+S_{2}' & =S_{3}+S_{4}=\frac{40}{192}\approx0.2083\\
+S_{3}' & =S_{5}+S_{6}=\frac{140}{192}\approx0.7292
+\end{align*}
+
+\end_inset
+
+הדיאגרמה: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename 4th_diagram.png
+	lyxscale 80
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+5
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+על מנת לחשב את 
+\begin_inset Formula $\overline{\lambda}$
+\end_inset
+
+ נשתמש בקצבי ההגעה בדיאגרמת המצבים המצומצמת: 
+\begin_inset Formula 
+\[
+\overline{\lambda}=E(\lambda)=\sum_{i=0}^{3}S_{i}'\cdot\lambda_{i}=50\cdot\frac{2}{192}+40\cdot\frac{10}{192}+35\cdot\frac{40}{192}+0=\frac{475}{48}\approx9.896
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+6
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נחשב את 
+\begin_inset Formula $\overline{N}$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\overline{N}=E(N)=\sum_{i=0}^{3}S_{i}'\cdot i=0+1\cdot\frac{10}{192}+2\cdot\frac{40}{192}+3\cdot\frac{140}{192}=\frac{85}{32}=2.65625
+\]
+
+\end_inset
+
+לפי משפט ליטל מתקיים: 
+\begin_inset Formula $\overline{N}=\overline{\lambda}\cdot\overline{T}$
+\end_inset
+
+.
+ לכן נקבל: 
+\begin_inset Formula 
+\[
+\overline{T}=\frac{\overline{N}}{\overline{\lambda}}=\frac{51}{190}\approx0.2684
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\numeric on
+7
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+על מנת לקבל את תוחלת זמן ההמתנה נחסיר מתוחלת זמן השהייה 
+\begin_inset Formula $\overline{T}$
+\end_inset
+
+ את תוחלת זמן השירות 
+\begin_inset Formula $\frac{1}{\mu}$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\[
+T_{Q}=\overline{T}-\frac{1}{\mu}=\frac{51}{190}-\frac{1}{10}=\frac{16}{95}\approx0.1684
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+
+\series bold
+\numeric on
+8
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+להלן פלט הסימולטור עבור הרצה עם הקלט הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל עבור 
+\begin_inset Formula $T=100,000$
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename simulation2.png
+	lyxscale 80
+	scale 65
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כאשר הפרמטרים המסומנים באדום משמאל לימין הם: 
+\begin_inset Formula 
+\[
+Z_{0},Z_{1},Z_{2},\overline{T_{W}},\overline{T_{S}},\overline{\lambda_{A}}
+\]
+
+\end_inset
+
+נשווה ביניהם לבין החישובים התיאורטיים:
+\begin_inset Formula 
+\begin{align*}
+Z_{0} & =0.0105\approx0.0104=S_{0}\\
+Z_{1} & =0.0261\approx0.02604=S_{1},S_{2}\\
+Z_{2} & =0.104253\approx0.1042=S_{3},S_{4}\\
+Z_{2} & =0.3643\approx0.3646=S_{5},S_{6}\\
+\overline{T_{W}} & =0.1681\approx0.1684=T_{Q}\\
+\overline{T_{S}} & =0.0998\approx0.1=\frac{1}{\mu}\\
+\overline{\lambda_{A}} & =9.91\approx9.896=\overline{\lambda}
+\end{align*}
+
+\end_inset
+
+ניתן לראות שהחישובים התיאורטיים מסכימים עם הסימולטור עד כדי שגיאה זניחה
+ כתוצאה מרעש אקראי.
+\begin_inset Newline newline
+\end_inset
+
+)גם כאן סימלצנו את המערכת המצומצמת, כפי שכבר הוסבר בקלט הקודם(.
+\end_layout
+
+\end_body
+\end_document

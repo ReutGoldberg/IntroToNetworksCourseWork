@@ -43,9 +43,9 @@ class Simulator(object):
         for i in range(1, len(self.avg_time_queue_sizes)):
             A_Ti.append(self.avg_time_queue_sizes[i] / self.amount_queues)
 
-        Z_i = [self.avg_time_queue_sizes[0] / self.last_treatment_time]
+        Z_i = [A_Ti[0] / self.last_treatment_time]
         for i in range(1, len(self.avg_time_queue_sizes)):
-            Z_i.append(self.avg_time_queue_sizes[i] / (self.last_treatment_time * self.amount_queues))
+            Z_i.append(A_Ti[i] / self.last_treatment_time)
 
         Tw = self.patients_on_hold_total_time / self.amount_vaccinated
         Ts = self.patients_treatment_total_time / self.amount_vaccinated
