@@ -1,4 +1,3 @@
-from Simulator import *
 from random import expovariate, uniform
 
 

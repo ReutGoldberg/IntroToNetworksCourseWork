@@ -1,8 +1,9 @@
 from heapq import heapify, heappop, heappush
 from collections import deque
-from Event import Event, ArriveEvent
-from random import expovariate, uniform
+from Event import ArriveEvent
+from random import expovariate
 import time
+
 
 class Simulator(object):
 
@@ -28,7 +29,6 @@ class Simulator(object):
     def run(self):
         t = expovariate(self._lambda)
         while t < self.runtime:
-            #heapq.heappush(self.events_queue, ArriveEvent(t, self))
             self.events_queue.append(ArriveEvent(t, self))
             t += expovariate(self._lambda)
         heapify(self.events_queue)
