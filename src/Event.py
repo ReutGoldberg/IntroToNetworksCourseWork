@@ -1,5 +1,4 @@
-from random import uniform
-from math import log
+from random import expovariate, uniform
 
 
 class Event:
@@ -36,7 +35,7 @@ class StartTreatmentEvent(Event):
 
     def processEvent(self):
         self.simulator.amount_vaccinated += 1
-        treatment_time = -1/self.simulator.myu * log(uniform(0, 1))
+        treatment_time = expovariate(self.simulator.myu)
         self.simulator.patients_treatment_total_time += treatment_time
         self.simulator.patients_on_hold_total_time += self.time - self.simulator.patients_queue[0]
         self.simulator.scheduleEvent(LeaveEvent(self.time + treatment_time, self.simulator))

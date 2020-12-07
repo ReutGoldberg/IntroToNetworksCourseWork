@@ -1,8 +1,8 @@
 from heapq import heapify, heappop, heappush
 from collections import deque
 from Event import ArriveEvent
-from random import uniform
-from math import log
+from random import expovariate
+import time
 
 
 class Simulator(object):
@@ -27,10 +27,10 @@ class Simulator(object):
         heappush(self.events_queue, event)
 
     def run(self):
-        t = -1/self._lambda * log(uniform(0, 1))
+        t = expovariate(self._lambda)
         while t < self.runtime:
             self.events_queue.append(ArriveEvent(t, self))
-            t += -1/self._lambda * log(uniform(0, 1))
+            t += expovariate(self._lambda)
         heapify(self.events_queue)
 
         while len(self.events_queue) != 0:
