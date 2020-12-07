@@ -1,7 +1,7 @@
 from heapq import heapify, heappop, heappush
 from collections import deque
 from Event import ArriveEvent
-from random import uniform
+from random import random
 from math import log
 
 
@@ -23,22 +23,23 @@ class Simulator(object):
         self.events_queue = []
         self.time = 0
 
-    def scheduleEvent(self, event):
+    def schedule_event(self, event):
         heappush(self.events_queue, event)
 
     def run(self):
-        t = -1/self._lambda * log(uniform(0, 1))
+        t = -1/self._lambda * log(random())
         while t < self.runtime:
             self.events_queue.append(ArriveEvent(t, self))
-            t += -1/self._lambda * log(uniform(0, 1))
+            t += -1/self._lambda * log(random())
         heapify(self.events_queue)
 
         while len(self.events_queue) != 0:
             event = heappop(self.events_queue)
             self.avg_time_queue_sizes[len(self.patients_queue)] += (event.time - self.time)
             self.time = event.time
-            event.processEvent()
+            event.process_event()
 
+    def print_results(self):
         A_Ti = [self.avg_time_queue_sizes[0]]
         for i in range(1, len(self.avg_time_queue_sizes)):
             A_Ti.append(self.avg_time_queue_sizes[i] / self.amount_queues)
