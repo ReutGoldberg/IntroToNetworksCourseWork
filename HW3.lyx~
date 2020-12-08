@@ -399,9 +399,9 @@ S_{6} & =\frac{27}{361}\approx0.0748
 
 \begin_layout Standard
 נשים לב כי מאילוצי התרגיל, יכול להיות רק תור לחיסון אחד בכל רגע נתון.
- שכן ברגע שאין מתחסנים כלל במערכת ואז מגיע הראשון ובוחר חיסון באקראי, כל
- עוד התור לחיסון זה לא ריק )יש מישהו שמתחסן כרגע( אז כל המתחסנים החדשים
- שיגיעו לבית החולים יכנסו אך ורק לתור זה.
+ ברגע שאין מתחסנים במערכת, הראשון שמגיע להתחסן יבחר תור לחיסון באקראי וכל
+ עוד תור זה לא ריק )יש מישהו שמתחסן כרגע( כל המתחסנים החדשים שיגיעו לבית
+ החולים יכנסו אך ורק לתור זה.
  לכן, נוכל לתאר מצב של המערכת על ידי מספר המתחסנים שיש כרגע 
 \series bold
 בתור כלשהו.
@@ -451,7 +451,7 @@ S_{2}' & =S_{4}+S_{5}+S_{6}=\frac{81}{361}\approx0.2243
  נשתמש בקצבי ההגעה בדיאגרמת המצבים המצומצמת: 
 \begin_inset Formula 
 \[
-\overline{\lambda}=E(\lambda)=\sum_{i=0}^{2}S_{i}'\cdot\lambda_{i}=30\cdot\frac{160}{361}+27\cdot\frac{120}{360}+0=\frac{8040}{361}\approx22.27
+\overline{\lambda}=E(\lambda)=\sum_{i=0}^{2}S_{i}'\cdot\lambda_{i}=30\cdot\frac{160}{361}+27\cdot\frac{120}{361}+0=\frac{8040}{361}\approx22.27
 \]
 
 \end_inset
@@ -732,6 +732,42 @@ A_{Ti}=\frac{1}{M}\cdot\sum_{m=1}^{M}T_{i}^{m}=\frac{Total\_Time\_Exists\_Queue\
 \end_inset
 
 ל, ולכן בתוצאות הסימולציה שלנו קיבלנו בעצם תוצאות המשקפות את המערכת המקורית.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
