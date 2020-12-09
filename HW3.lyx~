@@ -417,7 +417,7 @@ S_{6} & =\frac{27}{361}\approx0.0748
 
 \end_inset
 
-ההסתברויות עבור המצבים החדשים יהיו: 
+ההסתברויות עבור המצבים החדשים: 
 \begin_inset Formula 
 \begin{align*}
 S_{0}' & =S_{0}=\frac{160}{361}\approx0.4432\\
@@ -549,7 +549,7 @@ T_{Q}=\overline{T}-\frac{1}{\mu}=\frac{47}{1340}-\frac{1}{40}=\frac{27}{2680}\ap
 \begin_inset Formula $T=100,000$
 \end_inset
 
-: 
+ )כדי להקטין את הרעש(: 
 \begin_inset Newline newline
 \end_inset
 
@@ -587,7 +587,7 @@ Z_{2} & =0.07483\approx0.0748=S_{4},S_{5},S_{6}\\
 \end_inset
 
 ניתן לראות שהחישובים התיאורטיים תואמים לסימולטור עד כדי שגיאה זניחה כתוצאה
- מרעש אקראי.
+ מרעש.
 \begin_inset Newline newline
 \end_inset
 
@@ -671,7 +671,15 @@ Z_{2} & =0.07483\approx0.0748=S_{4},S_{5},S_{6}\\
 \end_inset
 
 .
- חישבנו כך כיוון שהתורים נבחרים באופן אחיד, ולכן אין תור לו 
+ נסביר מדוע חישוב זה נותן לנו את ה-
+\begin_inset Formula $A_{Ti}$
+\end_inset
+
+ המתאים למערכת המקורית:
+\begin_inset Newline newline
+\end_inset
+
+כיוון שהתורים נבחרים באופן אחיד, אין אף תור עם 
 \begin_inset Quotes eld
 \end_inset
 
@@ -679,7 +687,7 @@ Z_{2} & =0.07483\approx0.0748=S_{4},S_{5},S_{6}\\
 \begin_inset Quotes erd
 \end_inset
 
- על תור אחר.
+ להיבחר על פני תור אחר.
  עקב כך, 
 \begin_inset Formula $A_{Ti}$
 \end_inset
@@ -696,7 +704,7 @@ Z_{2} & =0.07483\approx0.0748=S_{4},S_{5},S_{6}\\
 \begin_inset Formula $i$
 \end_inset
 
-, חלקי מספר התורים, הוא 
+, חלקי מספר התורים 
 \begin_inset Formula $M$
 \end_inset
 
@@ -1153,7 +1161,7 @@ Z_{2} & =0.3643\approx0.3646=S_{5},S_{6}\\
 \end_inset
 
 ניתן לראות שהחישובים התיאורטיים תואמים לסימולטור עד כדי שגיאה זניחה כתוצאה
- מרעש אקראי.
+ מרעש.
 \begin_inset Newline newline
 \end_inset
 
