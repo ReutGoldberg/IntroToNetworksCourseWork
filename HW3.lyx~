@@ -671,7 +671,10 @@ Z_{2} & =0.07483\approx0.0748=S_{4},S_{5},S_{6}\\
 \end_inset
 
 .
- נסביר מדוע חישוב זה נותן לנו את ה-
+\begin_inset Newline newline
+\end_inset
+
+נסביר מדוע חישוב זה נותן לנו את ה-
 \begin_inset Formula $A_{Ti}$
 \end_inset
 
@@ -745,6 +748,22 @@ A_{Ti}=\frac{1}{M}\cdot\sum_{m=1}^{M}T_{i}^{m}=\frac{Total\_Time\_Exists\_Queue\
 \end_inset
 
 ל, ולכן בתוצאות הסימולציה שלנו קיבלנו תוצאות המשקפות את המערכת המקורית.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 

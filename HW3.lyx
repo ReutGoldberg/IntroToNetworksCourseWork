@@ -743,11 +743,44 @@ A_{Ti}=\frac{1}{M}\cdot\sum_{m=1}^{M}T_{i}^{m}=\frac{Total\_Time\_Exists\_Queue\
 \begin_inset Formula $A_{Ti}$
 \end_inset
 
-, וכל שאר הפרמטרים לא מושפעים מאופן החישוב הנ
-\begin_inset Quotes erd
+, וחישוב כל שאר הפרמטרים זהה בין שתי המערכות )המקורית והמצומצמת(, ולכן בתוצאות
+ הסימולציה שלנו קיבלנו תוצאות המשקפות את המערכת המקורית.
+\begin_inset Newline newline
 \end_inset
 
-ל, ולכן בתוצאות הסימולציה שלנו קיבלנו תוצאות המשקפות את המערכת המקורית.
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 

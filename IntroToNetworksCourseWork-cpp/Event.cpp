@@ -1,18 +1,15 @@
-//
-// Created by reutg on 09/12/2020.
-//
-
-#include "Event.h"
+#include "Simulator.h"
 
 
 void ArriveEvent::process_event() {
-    Simulator* sim = sim->getInstance();
+    Simulator* sim = Simulator::getInstance();
     int qsize = sim->getPatients_queue()->size();
     if(qsize==0){
         sim->getPatients_queue()->push(this->getTime());
         sim->schedule_event(new StartTreatmentEvent(this->getTime()));
-    } else{
-        double r= (double)rand()/(RAND_MAX);
+    }
+    else
+    {
         if(sim->toVaccinateOrNotToVaccinate(qsize))
             sim->getPatients_queue()->push(this->getTime());
         else
@@ -21,18 +18,19 @@ void ArriveEvent::process_event() {
 }
 
 void StartTreatmentEvent::process_event() {
-    Simulator* sim = sim->getInstance();
+    Simulator* sim = Simulator::getInstance();
     sim->addAmount_vaccinated(1);
-    double treatment_time = (-1/sim->getMyu())*log(rand());
+    double r= (((double)rand() + 1)/(RAND_MAX));
+    double treatment_time = (-1/sim->getMyu())*log(r);
     sim->addPatients_treatment_total_time(treatment_time);
     sim->addPatients_on_hold_total_time(this->getTime()-sim->getPatients_queue()->front());
     sim->schedule_event(new LeaveEvent(this->getTime()+treatment_time));
 }
 
 void LeaveEvent::process_event() {
-    Simulator* sim = sim->getInstance();
+    Simulator* sim = Simulator::getInstance();
     sim->setLast_treatment_time(this->getTime());
-    sim->getPatients_queue()->pop(); //TODO check poop right side
+    sim->getPatients_queue()->pop();
     if(!sim->getPatients_queue()->empty())
         sim->schedule_event(new StartTreatmentEvent(this->getTime()));
 }

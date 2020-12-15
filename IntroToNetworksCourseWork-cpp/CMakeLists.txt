@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 3.17)
-project(IntroToNetworksCourseWork)
+cmake_minimum_required(VERSION 3.15)
+project(IntroToNetworksCourseWork_cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(IntroToNetworksCourseWork main.cpp Event.cpp Simulator.cpp Event.h)
+add_executable(IntroToNetworksCourseWork_cpp main.cpp Event.cpp Simulator.cpp)
